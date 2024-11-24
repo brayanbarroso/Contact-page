@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(../resources/background.svg) no-repeat center;
+  background-size: cover;
+  font-family: "Be Vietnam Pro", serif;
+  /* height: 100vh; */
+}
+
+.header {
+  margin-left: 72px;
+  margin-top: 36px;
+}
+
+.section {
+  /* border: 2px solid green; */
+  margin: 0 auto;
+  max-width: 70%;
+}
+
+.section h1,
+p {
+  color: #fff;
+  font-size: 3.5rem;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 70%;
+}
+
+.section p {
+  font-size: 2rem;
+  margin-top: 20px;
+}
+
+/* Formulario */
+.section-form {
+  background-color: #ffffff33;
+  /* border: 1px solid red; */
+  border-radius: 12px;
+  margin-top: 40px;
+}
+
+.form-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+}
+
+.form-control {
+  margin-inline: 16px;
+  margin-block: 20px;
+}
+
+.form-control label {
+  color: #fff;
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.form-control input,
+select {
+  border: none;
+  border-radius: 8px;
+  display: block;
+  padding: 24px 18px;
+  outline: none;
+  width: 100%;
+}
+
+.form-control input::placeholder,
+select,
+textarea::placeholder {
+  color: #000;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.form-control textarea {
+  border-radius: 8px;
+  padding: 20px 18px;
+  width: 100%;
+}
+
+.form-btn {
+  border: none;
+  border-radius: 8px;
+  color: #4036a9;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding: 20px 18px;
+  width: 100%;
+}
+
+.form-btn:hover {
+  background-color: #cdd5e0;
+}
+
+/* footer */
+.author-info {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 16px;
+  color: rgb(55, 65, 81);
+}
+
+.author-info a {
+  text-decoration: none;
+}

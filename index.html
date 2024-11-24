@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      href="resources/favicon.ico"
+      type="image/x-icon"
+      sizes="96x96"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Contact Page | devChallenges.io</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-logo">
+        <img src="./resources/Logo@2x.png" alt="Logo Formulario" />
+      </div>
+    </header>
+    <main>
+      <section class="section">
+        <h1>Interested in our business pricing?</h1>
+        <p>
+          Fill out the form to view details and we’ll contact you as soon as
+          possible.
+        </p>
+
+        <form action="" class="section-form">
+          <div class="form-group">
+            <div class="form-control">
+              <label for="name">Name</label>
+              <input type="text" name="Name" placeholder="Ethan Johnson" />
+            </div>
+            <div class="form-control">
+              <label for="name">Company Email</label>
+              <input
+                type="email"
+                name="Name"
+                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$"
+                placeholder="ethan@johnson.com"
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="form-control">
+              <label for="company-size">Company Size</label>
+              <select name="company-size" id="">
+                <option value="">50-100 employees</option>
+                <option value="">100-200 employees</option>
+                <option value="">300-400 employees</option>
+              </select>
+            </div>
+            <div class="form-control">
+              <label for="Subject">Subject</label>
+              <select name="Subject" id="">
+                <option value="">Building Landing pages</option>
+                <option value="">100-200 employees</option>
+                <option value="">300-400 employees</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-control">
+            <label for="Message">Message</label>
+            <textarea
+              name="Message"
+              id=""
+              placeholder="50-100 employees"
+              rows="10"
+            ></textarea>
+          </div>
+          <div class="form-control">
+            <button class="form-btn">Contact Sales</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="author-info">
+        Coded by <a href="#">Your Name Here</a> | Challenge by
+        <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
+          >devChallenges.io</a
+        >.
+      </div>
+    </footer>
+  </body>
+</html>
