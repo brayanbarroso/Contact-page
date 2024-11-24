@@ -19,21 +19,25 @@ body {
 .section {
   /* border: 2px solid green; */
   margin: 0 auto;
-  max-width: 70%;
+  width: 70%;
 }
 
-.section h1,
-p {
+.section h1 {
   color: #fff;
   font-size: 3.5rem;
   margin: 0 auto;
   text-align: center;
-  max-width: 70%;
+  width: 70%;
 }
 
 .section p {
+  /* border: 1px solid red; */
+  color: #fff;
   font-size: 2rem;
+  margin: 0 auto;
   margin-top: 20px;
+  max-width: 70%;
+  text-align: center;
 }
 
 /* Formulario */
@@ -64,6 +68,9 @@ p {
 
 .form-control input,
 select {
+  color: #111729;
+  font-size: 1.1rem;
+  font-weight: bold;
   border: none;
   border-radius: 8px;
   display: block;
@@ -72,10 +79,22 @@ select {
   width: 100%;
 }
 
+select {
+  -moz-appearance: none; /*Firefox legacy*/
+  -webkit-appearance: none; /* Chromes legacy*/
+  appearance: none;
+  /*Y a continuación añadimos el nuestro como background*/
+  background-image: url(../resources/Expand_down.svg);
+  background-size: 18px;
+  background-repeat: no-repeat;
+  background-position: calc(100% - 12px) center; /*Lo posicionamos a la derecha*/
+  padding-right: 24px;
+}
+
 .form-control input::placeholder,
 select,
 textarea::placeholder {
-  color: #000;
+  color: #111729;
   font-size: 1.1rem;
   font-weight: bold;
 }
@@ -103,13 +122,78 @@ textarea::placeholder {
 }
 
 /* footer */
+footer {
+  margin-block: 40px;
+}
 .author-info {
   font-size: 14px;
   text-align: center;
   margin-top: 16px;
-  color: rgb(55, 65, 81);
+  color: #fff;
 }
 
 .author-info a {
+  color: #111729;
+  font-weight: bold;
   text-decoration: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  body {
+    background-image: url("../resources/background@2x.png");
+  }
+  .section p {
+    /* border: 1px solid red; */
+    max-width: 90%;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  .section {
+    width: 80%;
+  }
+
+  .section h1 {
+    font-size: 2.5rem;
+  }
+
+  .section p {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  body {
+    background-image: url("../resources/background@3x.png");
+  }
+
+  .header {
+    margin-left: 16px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  .section {
+    width: 95%;
+  }
+
+  .form-group {
+    grid-template-columns: 1fr;
+  }
+
+  .section h1 {
+    font-size: 2.2rem;
+    width: 90%;
+  }
+
+  .section p {
+    font-size: 0.9rem;
+    width: 100%;
+  }
+
+  .form-control input::placeholder,
+  select,
+  textarea::placeholder {
+    font-size: 1rem;
+  }
 }
